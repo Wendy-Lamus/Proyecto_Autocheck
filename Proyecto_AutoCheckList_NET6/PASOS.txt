@@ -1,0 +1,8 @@
+PASOS PARA EJECUTAR EL PROYECTO EN VISUAL STUDIO 2022
+
+1. Abre el archivo .sln
+2. Visual Studio instalará los paquetes automáticamente
+3. Verifica que tengas SQL Server LocalDB instalado (viene con VS2022)
+4. Presiona F5
+5. La aplicación abrirá en la página de Login
+6. Registra un usuario y luego podrás ver el Dashboard

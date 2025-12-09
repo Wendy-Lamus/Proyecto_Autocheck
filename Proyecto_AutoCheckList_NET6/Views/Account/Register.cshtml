@@ -1,0 +1,21 @@
+@model Proyecto_AutoCheckList_NET6.Models.RegisterViewModel
+
+<h2>Registro</h2>
+
+<form method="post">
+    <label asp-for="Email"></label>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+
+    <label asp-for="Password"></label>
+    <input asp-for="Password" />
+    <span asp-validation-for="Password"></span>
+
+    <label asp-for="ConfirmPassword"></label>
+    <input asp-for="ConfirmPassword" />
+    <span asp-validation-for="ConfirmPassword"></span>
+
+    <button type="submit">Registrar</button>
+</form>
+
+<p>¿Ya tienes cuenta? <a asp-action="Login">Iniciar sesión</a></p>

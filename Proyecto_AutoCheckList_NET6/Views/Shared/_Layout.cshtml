@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - AutoCheckList</title>
+</head>
+<body>
+    <header>
+        <nav>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a asp-controller="Home" asp-action="Index">Dashboard</a>
+                <form method="post" asp-controller="Account" asp-action="Logout" style="display:inline">
+                    <button type="submit">Cerrar sesión</button>
+                </form>
+            }
+            else
+            {
+                <a asp-controller="Account" asp-action="Login">Iniciar sesión</a>
+                <a asp-controller="Account" asp-action="Register">Registrarse</a>
+            }
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+</body>
+</html>
